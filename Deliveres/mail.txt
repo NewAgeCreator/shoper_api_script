@@ -1,0 +1,46 @@
+Dzień dobry,
+
+
+W załączniku koszty transportowe marki Skandica.
+
+W pierwszym załączniku koszty według nazwy towarów, w drugim załączniku koszty towaru zestawione z wagą towaru która jest w pliku xml więc może się Panu przyda.
+
+
+Poniżej informacja odnośnie magazynów w pliku xml, które determinują termin dostawy:
+
+Stock id=1 - magazyn M1 - termin realizacji 48 h
+Stock id=2 - magazyn M2 - termin realizacji 48 h
+Stock id=3 - magazyn M3 - termin realizacji 4 tygodnie
+Stock id=5 - magazyn M5 - termin realizacji 21 dni (stelaże 90 cm)
+Stock id=8 - magazyn M8 - termin realizacji 36 dni
+Stock id=-2 - magazyn MP - przedsprzedaż z podanym terminem realizacji
+Stock id=0 - niedostępny dla hurtu
+
+Przykład:
+
+<stock id="-2" quantity="30" available_stock_quantity="30" stock_quantity="0" availability_id="4" planned_date_of_acceptance_of_delivery="2021-11-12T00:00:00+0100"/>
+<stock id="0" quantity="-1" available_stock_quantity="-1" stock_quantity="0" availability_id="1"/>
+<stock id="1" quantity="3" available_stock_quantity="3" stock_quantity="0" availability_id="4"/>
+
+quantity="-1" - określa ilość dostępnych sztuk
+- 1 to nieskończoność
+- pozostałe cyfry/liczby ilość dostępnych sztuk
+
+planned_date_of_acceptance_of_delivery="2021-11-12T00:00:00+0100" - planowany termin dostawy
+
+
+
+W razie pytań proszę pisać lub dzwonić.
+
+
+M4- id="4" to magazyn dla materacy - 14 dni.
+
+
+    24 godziny
+	48 godzin
+	3 dni
+	4 dni
+	5 dni
+	10 dni
+	14 dni
+	21dni
